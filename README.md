@@ -40,6 +40,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: :groups_users
