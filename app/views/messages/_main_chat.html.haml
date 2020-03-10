@@ -1,0 +1,29 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group{"data-group_id" => ""}
+        Test
+      %ul.main-header__left-box__member-list
+        Member:
+        %li.member
+          はる
+      = link_to "#" do
+        .main-header__edit-btn Edit
+  .messages
+    .messege
+      .message__upper-info
+        %p.message__upper-info__talker test_user
+        %p.message__upper-info__date 2020/3/09(Mon) 22:47:21
+      %p.message__text はーい
+      .message__upper-info
+        %p.message__upper-info__talker test_user
+        %p.message__upper-info__date 2020/3/09(Mon) 23:47:21
+      %p.message__text ありがとう 
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class:"input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type:"submit", class:"submit-btn"}
