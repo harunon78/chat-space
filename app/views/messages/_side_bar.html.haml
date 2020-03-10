@@ -1,0 +1,19 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__username はる
+      %ul.side-header__box__icon
+        %li.side-header__box__icon__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-header__box__icon__edit-user
+          = link_to "#" do
+            = icon('fas', 'cog')
+  
+  .groups
+    = link_to "#", class:"group" do
+      %p.group__group-name TECHCAMP
+      %p.group__group-message まだメッセージはありません。
+    = link_to "#", class:"group" do
+      %p.group__group-name TECHCAMP2
+      %p.group__group-message まだメッセージはありません。 
