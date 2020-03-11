@@ -8,95 +8,97 @@
     width: 300px;
     height: 100vh;
     float: left;
-      .side-header {
-        background-color: $side_blue_dark;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-          &__box {
-            width: 260px;
-            height: 20px;
-            display: flex;
-            justify-content: space-between;
-              &__username {
-                color: $White;
-                font-weight: bold;
-                height: 20px;
-                width: 200px;
-                overflow: scroll
+    .side-header {
+      background-color: $side_blue_dark;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+        &__box {
+          width: 260px;
+          height: 20px;
+          display: flex;
+          justify-content: space-between;
+            &__username {
+              color: $White;
+              font-weight: bold;
+              height: 20px;
+              width: 200px;
+              overflow: scroll
               }
-              &__icon {
-                display: flex;
-                line-height: 20px;
-                width: 60px;
-                  &__new-group{
-                    margin: 0 0 0 auto;
-                    padding-right: 5px;
-                    a {
-                      color: $White;
+            &__icon {
+              display: flex;
+              line-height: 20px;
+              width: 60px;
+                &__new-group{
+                  margin: 0 0 0 auto;
+                  padding-right: 5px;
+                  a {
+                    color: $White;
                     
                   }
                 }
-                  &__edit-user{
-                    a {
-                      color: $White;
+                &__edit-user{
+                  a {
+                    color: $White;
                   }
               }
             }
           }
       }
-  .groups {
-    height: calc(100vh - 100px);
-    background-color: $side_blue_dark;
-    padding: 20px 20px 0 20px;
-    bottom: 0;
-    overflow: scroll;
-    .group {
-      width: 100%;
-      color: $White;
-      font-weight: bold;
-      text-decoration: none;
-      .group__group-name {
-        font-size: 15px;
-        padding-bottom: 5px;
-        }
-      .group__group-message {
-        font-size: 11px;
-        padding-bottom: 40px;
+    .groups{
+      background-color: $side_blue_dark;
+      height: calc(100vh - 100px);
+      padding: 20px 20px 0 20px;
+        .group {
+          box-sizing: border-box;
+          padding: 20px 0 40px;
+            a {
+              text-decoration: none;
+            }
+              &__name{
+                color: $White;
+                font-weight: bold;
+                font-size: 15px;
+                padding-bottom: 5px;
+              }
+              &__message{
+                color: $White;
+                font-weight: bold;
+                font-size: 11px;
+                padding-bottom: 40px;
+              }
         }
       }
     }
-  }
-
+  
   .chat-main {
     width: calc(100vw - 300px);
     float: left;
-      .main-header {
-        box-sizing: border-box;
-        display: flex;
-        padding: 0 40px;
-        background-color: $White;
-        height: 100px;
-        justify-content: space-between;
-        border-bottom: 1px solid #eeeeee;
-        position: relative;
-        overflow: scroll;
-        &__left-box {
-         
-          margin-top: 35px;
-          &__current-group {
-            color: #333333;
-            margin-bottom: 15px;
-            font-size: 20px;
-          }
-          &__member-list {
-            color: $gray;
-            font-size: 12px;
+    .main-header {
+      box-sizing: border-box;
+      display: flex;
+      padding: 0 40px;
+      background-color: $White;
+      height: 100px;
+      justify-content: space-between;
+      border-bottom: 1px solid #eeeeee;
+      position: relative;
+      overflow: scroll;
+      &__left-box {
+        margin-top: 35px;
+        &__current-group {
+          color: #333333;
+          margin-bottom: 15px;
+          font-size: 20px;
+        }
+        &__member-list {
+          color: $gray;
+          font-size: 12px;
             
-            .member{
-              display: inline-block;
-              padding-right: 5px;
+          .member{
+            display: inline-block;
+            padding-right: 5px;
             }
           }
         }
