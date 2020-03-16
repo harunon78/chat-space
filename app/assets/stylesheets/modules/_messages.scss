@@ -9,7 +9,7 @@
     height: 100vh;
     float: left;
     .side-header {
-      background-color: $side_blue_dark;
+      background-color: #253141;
       height: 100px;
       display: flex;
       align-items: center;
@@ -24,7 +24,6 @@
           font-weight: bold;
           height: 20px;
           width: 200px;
-          overflow: scroll
         }
         &__icon {
           display: flex;
@@ -57,13 +56,11 @@
           }
             &__name{
               color: $White;
-              font-weight: bold;
               font-size: 15px;
               padding-bottom: 5px;
             }
             &__message{
               color: $White;
-              font-weight: bold;
               font-size: 11px;
               padding-bottom: 40px;
             }
@@ -83,7 +80,6 @@
       justify-content: space-between;
       border-bottom: 1px solid #eeeeee;
       position: relative;
-      overflow: scroll;
       &__left-box {
         margin-top: 35px;
         &__current-group {
@@ -124,6 +120,7 @@
       background-color: #fafafa;
       height: calc(100vh - 100px - 90px);
       padding: 35px 40px;
+      box-sizing: border-box;
       overflow: scroll;
       .message {
         padding-bottom: 35px;
@@ -149,7 +146,7 @@
         }
       }
     }
-    .form {
+      .form {
       position: fixed;
       width: calc(100vw - 300px);
       bottom: 0;
